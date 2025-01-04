@@ -54,4 +54,4 @@ jobs:
           file: ./docker-nfs-server/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: lewadik/nfs-server:latest,lewadik/nfs-server:${{ env.version }}
+          tags: lewadik/nfs-server:latest
