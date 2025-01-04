@@ -42,7 +42,7 @@ jobs:
           context: ./docker-nfs-server
           file: ./docker-nfs-server/Dockerfile
           load: true
-          tags: heywoodlh/nfs-server-local:latest
+          tags: lewadik/nfs-server-local:latest
       -
         name: Get nfs-utils version
         run: |
@@ -57,4 +57,4 @@ jobs:
           file: ./docker-nfs-server/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: heywoodlh/nfs-server:latest,heywoodlh/nfs-server:${{ env.version }}
+          tags: lewadik/nfs-server:latest,lewadik/nfs-server:${{ env.version }}
